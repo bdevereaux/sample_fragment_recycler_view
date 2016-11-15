@@ -3,12 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile_pic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/name_text"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@id/profile_pic"
+        android:layout_centerHorizontal="true"
         android:text="test"/>
 
     <TextView
@@ -16,7 +23,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/school_text"
         android:layout_below="@id/name_text"
-        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
         android:text="test"/>
 
 </RelativeLayout>

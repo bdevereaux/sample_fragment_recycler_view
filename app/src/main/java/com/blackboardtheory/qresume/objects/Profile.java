@@ -8,27 +8,38 @@ public class Profile {
 
 
 
-    private String name, school;
+    private String title, icon_url;
+    private int userID;
 
-    public Profile(String name, String school) {
-        this.name = name;
-        this.school = school;
+
+    public Profile(String title, String icon_url, int userID) {
+        this.title = title;
+        this.icon_url = icon_url;
+        this.userID = userID;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getSchool() {
-        return school;
+    public String getIconURL() {
+        return icon_url;
     }
 
-    public void setSchool(String school) {
-        this.school = school;
+    public void setIconURL(String icon_url) {
+        this.icon_url = icon_url;
+    }
+
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
 }
